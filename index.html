@@ -3,23 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Rock Paper Scissors w UI</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <h1>Rock! Paper! Scissors!</h1>
     <h2 class="result">Make your pick to start the game</h2>
+    <div class="container">
+      <ul>
+        <li><button class="choice" data-choice="rock">Rock</button></li>
+        <li><button class="choice" data-choice="paper">Paper</button></li>
+        <li><button class="choice" data-choice="scissors">Scissors</button></li>
+      </ul>
+    </div>
     <div class="score">
       <h3 class="score player">Player: 0</h3>
       <h3 class="score pc">PC: 0</h3>
+      <button class="reset">Reset game</button>
     </div>
-    <div class="container">
-      <ul>
-        <li><button class="rock">Rock</button></li>
-        <li><button class="paper">Paper</button></li>
-        <li><button class="scissors">Scissors</button></li>
-      </ul>
-    </div>
-    <button class="reset">Reset game</button>
     <script src="./rps.js"></script>
   </body>
 </html>
